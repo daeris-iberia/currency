@@ -64,6 +64,20 @@
                                 exchange rates based on EUR, other foreign currency
                                 rates are recalculated and might differ from real rates.
                             </div>
+                            <div
+                                attrs="{'invisible':['|',('service','!=','OXR'),('currency_name','=','USD')]}"
+                                class="alert alert-warning"
+                                colspan="2"
+                                role="alert"
+                            >
+                                <strong>!</strong>
+                                You are using OpenExchangeRates.org rate
+                                service with a base currency different from USD (EEUU Dolar).
+                                <br />
+                                As long as the OpenExchangeRates.org only provides
+                                exchange rates based on USD on free accounts, other foreign currency
+                                rates are recalculated and might differ from real rates.
+                            </div>
                         </group>
                         <group groups="base.group_multi_company">
                             <field name="company_id" />
