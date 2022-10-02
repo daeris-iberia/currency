@@ -132,6 +132,7 @@
             if records:
                 action = {
                     'type': 'ir.actions.act_window',
+                    'name': 'Asistente de actualización de tipo de cambio',
                     'res_model': 'res.currency.rate.update.wizard',
                     'views': [[False, 'form']],
                     'target': 'new',
